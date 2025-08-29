@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
   res.status(200).json({
-    message: "Welcome to the BFHL API. Use the POST /bfhl route."
+    message: "Welcome to the BFHL API."
   });
 });
 
@@ -89,9 +89,9 @@ app.post('/bfhl', (req, res) => {
     // Construct the final JSON response object
     const response = {
       is_success: true,
-      user_id: "john_doe_17091999", // Replace with your actual user ID
-      email: "john@xyz.com", // Replace with your actual email
-      roll_number: "ABCD123", // Replace with your actual roll number
+      user_id: "john_doe_17091999", 
+      email: "john@xyz.com", 
+      roll_number: "ABCD123", 
       odd_numbers: oddNumbers,
       even_numbers: evenNumbers,
       alphabets: alphabets,
